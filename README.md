@@ -1,5 +1,6 @@
 # wine-rpc
 wine-rpc is a Discord Rich Presence for any programs running under Wine.
+
 ![Sample](assets/sample1.jpg) ![Sample](assets/sample2.jpg)
 ## Why?
 Using the Discord app itself, you can already add anything running under Wine as your current activity. However, Discord is not so good at keeping track of Wine programs; after a while, the program won't get detected anymore and you would have to add the program again.
