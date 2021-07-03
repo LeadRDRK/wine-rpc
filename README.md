@@ -1,5 +1,5 @@
 # wine-rpc
-wine-rpc is a Discord Rich Presence for any programs running under Wine.
+wine-rpc provides a Discord Rich Presence for any programs running under Wine.
 
 ![Sample](assets/sample1.jpg) ![Sample](assets/sample2.jpg)
 ## Why?
