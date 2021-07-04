@@ -12,9 +12,9 @@ set(DISCORD_LIB_PATH "${CMAKE_SOURCE_DIR}/discord_game_sdk/lib/${ARCH_DIR}/disco
 if(NOT EXISTS "${DISCORD_LIB_PATH}")
     message(FATAL_ERROR "Discord Game SDK library not found!")
 endif()
-# copy the library to the build directory
-file(COPY ${DISCORD_LIB_PATH} DESTINATION ${CMAKE_BINARY_DIR})
-file(COPY ${DISCORD_LIB_PATH} DESTINATION ${CMAKE_BINARY_DIR}/src)
+# create symlinks of the library in the build directory
+file(CREATE_LINK "${DISCORD_LIB_PATH}" "${CMAKE_BINARY_DIR}/discord_game_sdk.so" SYMBOLIC)
+file(CREATE_LINK "${DISCORD_LIB_PATH}" "${CMAKE_BINARY_DIR}/src/discord_game_sdk.so" SYMBOLIC)
 add_library(discord_game_sdk SHARED IMPORTED)
 set_target_properties(discord_game_sdk PROPERTIES IMPORTED_LOCATION discord_game_sdk.so)
 

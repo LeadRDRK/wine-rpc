@@ -3,9 +3,9 @@ wine-rpc provides a Discord Rich Presence for any programs running under Wine.
 
 ![Sample](assets/sample1.jpg) ![Sample](assets/sample2.jpg)
 ## Why?
-Using the Discord app itself, you can already add anything running under Wine as your current activity. However, Discord is not so good at keeping track of Wine programs; after a while, the program won't get detected anymore and you would have to add the program again.
+Using the Discord app itself, you can already add anything running under Wine as your current activity. However, Discord is not so good at keeping track of Wine programs; after a while, your programs won't get detected anymore and you would have to add them again.
 
-Using a rich presence, we can literally put anything as your activity without relying on Discord to detect it. And as a bonus, supported apps could have their icon displayed on the rich presence. You could also have multiple presences for multiple apps at the same time.
+Using a rich presence, we can literally put anything as your activity without relying on Discord to detect it. And as a bonus, supported apps could have their icon displayed on the rich presence, and you could also have multiple presences for multiple apps at the same time.
 ## Installing
 wine-rpc requires no installation. Simply download a prebuilt binary from the [Releases](https://github.com/LeadRDRK/wine-rpc/releases) page and extract it anywhere or build it yourself.
 
