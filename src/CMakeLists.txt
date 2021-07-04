@@ -14,6 +14,7 @@ if(NOT EXISTS "${DISCORD_LIB_PATH}")
 endif()
 # copy the library to the build directory
 file(COPY ${DISCORD_LIB_PATH} DESTINATION ${CMAKE_BINARY_DIR})
+file(COPY ${DISCORD_LIB_PATH} DESTINATION ${CMAKE_BINARY_DIR}/src)
 add_library(discord_game_sdk SHARED IMPORTED)
 set_target_properties(discord_game_sdk PROPERTIES IMPORTED_LOCATION discord_game_sdk.so)
 
